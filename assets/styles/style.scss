@@ -1,0 +1,14 @@
+/*
+** Import core Bootstrap and FontAwesome styles
+*/
+@import "../bootstrap-sass-official/assets/stylesheets/_bootstrap";
+@import "../bootstrap-sass-official/assets/stylesheets/_bootstrap-sprockets";
+@import "../fontawesome/scss/font-awesome";
+@import "../bootflat/scss/bootflat.scss";
+/*
+** Start importing other theme style partials here
+*/
+@import "partials/_variables";
+@import "partials/_base";
+@import "partials/_navigation";
+@import "partials/_fileUpload";

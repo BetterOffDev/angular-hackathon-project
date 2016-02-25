@@ -1,0 +1,44 @@
+/**
+ * Base styles & structure
+ */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1.site-title {
+	margin-bottom: 50px;
+}
+
+.well {
+	background-color: $trp-light-gray;
+}
+
+.home-icon {
+	font-size: 60px;
+	color: $trp-bright-blue;
+}
+
+.home-icon-lg {
+	@extend .home-icon;
+	font-size: 70px;
+}
+
+.home-well {
+
+	.row {
+		padding: 10px;
+	}
+	
+	p {
+		padding-top: 15px;
+	}
+}
+
+.trp-btn-dark {
+	background-color: $trp-dark-blue;
+	&:hover {
+		background-color: $trp-bright-blue;
+	}
+}

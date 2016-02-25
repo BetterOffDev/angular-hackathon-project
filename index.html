@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Client Document Upload Portal</title>
+
+    <!-- Compiled and minified styles -->
+    <link href="dist/styles/style.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- core js files -->
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/angular.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.48.min.js"></script>
+
+    <!-- angular specific js files -->
+    <script src="dist/js/angular-route.min.js"></script>
+    <script src="dist/js/ng-file-upload-shim.js"></script>
+    <script src="dist/js/ng-file-upload.min.js"></script>
+    <script src="dist/app/app.js"></script>
+    <script src="dist/app/services/cdup.dataService.js"></script>
+    <script src="dist/app/services/cdup.S3UploadService.js"></script>
+    <script src="dist/app/navigation/cdup.navigation.js"></script>
+    <script src="dist/app/home/cdup.home.js"></script>
+    <script src="dist/app/newAccount/cdup.newAccount.js"></script>
+    <script src="dist/app/searchAccounts/cdup.searchAccounts.js"></script>
+    <script src="dist/app/login/cdup.login.js"></script>
+    <script src="dist/app/uploadFile/cdup.uploadFile.js"></script>
+    <script src="dist/app/viewFiles/cdup.viewFiles.js"></script>
+
+
+  </head>
+  <body ng-app="cdup">
+
+    <navigation></navigation>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div ng-view></div>
+        </div>
+      </div>
+
+    </div>
+
+    
+    
+  </body>
+</html>
